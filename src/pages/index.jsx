@@ -5,11 +5,15 @@ import Header from "../components/header"
 
 export default () => (
   <div /*style={{ color: `purple` }} */>
-    <Header headerText="Hello Weather!" />
+    <Header headerText="Welcome to my Gatsby JS Weather App!" />
+    <nav>
     <ul>
     <li><Link to="/">Home</Link></li> 
-    <li><Link to="/darkabout/">DarkSky Home</Link> </li>
-    <li><Link to="/openabout/">OpenWeather Home</Link> </li>
+    <li><Link to="/darkabout/">DarkSky</Link> </li>
+    <li><Link to="/openabout/">OpenWeather</Link> </li>
       </ul>
+    </nav>
+    
+    <section class="hp"></section>
     </div>
 )

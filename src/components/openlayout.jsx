@@ -40,11 +40,13 @@ export default ({ children }) => (
     </Link>
     {children}
         {/* <Link to="/">Home    </Link>  */}
-     <h3><ul>
-            <li><h3>City Name: {data.openWeather.name}</h3></li>
-            <li><h3>City Coord lat: {data.openWeather.coord.lat}</h3></li>
-            <li><h3>City Coord lon: {data.openWeather.coord.lon}</h3></li>
-     </ul></h3> 
+     <div class="bg"></div>
+     <h3>
+            <h3>Weather data for the city of {data.openWeather.name}</h3><br></br>
+            <h3>City Coordinates: lat: {data.openWeather.coord.lat}, lon: {data.openWeather.coord.lon}</h3><br></br>
+         
+            
+     </h3> 
 	
   </div>
     )}

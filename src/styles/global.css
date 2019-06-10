@@ -1,17 +1,92 @@
 html {
-  background-color: lavenderblush;
+  background-color: #a7c3f2;
 }
 div { 
-      margin: 6px 6px 6px 6px;
+      margin: auto;
       max-width: 700px;
       padding: 4px;
       padding-top: 4px;
-      border: 2px solid red;
-
+    
   }
 h3 {
           margin-bottom: 6px;
           display: inline-block;
           font-style: normal;
-
+          font-family: Arial;
       }
+h1 {
+  font-family: Arial;
+  text-align: center;
+}
+
+
+nav {
+  float: center;
+}
+
+nav ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+nav li {
+  display: inline-block;
+  margin-left: 70px;
+  padding-top: 23px;
+  position: relative;
+}
+
+nav a {
+  color: #000;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 14px;
+}
+
+nav a:hover {
+  color: #ffffff;
+}
+
+nav a::before {
+  content: '';
+  display: block;
+  height: 5px;
+  background-color: #000;
+  position: absolute;
+  top: 0;
+  width: 0%;
+
+  transition: all ease-in-out 250ms;
+}
+
+nav a:hover::before {
+  width: 100%;
+}
+
+.foreground {
+    background-image: url("https://wi-images.condecdn.net/image/doEYpG6Xd87/crop/2040/f/weather.jpg");
+    height: 50vh; 
+    width: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.bg {
+    background-image: url("https://i.udemycdn.com/course/750x422/1300884_463b.jpg");
+    height: 50vh; 
+    width: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.hp {
+  background-image: url(https://www.xda-developers.com/files/2018/05/android-weather-apps.png);
+  height: 50vh; 
+  width: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
